@@ -48,7 +48,7 @@ def handle_login(role, check_user_login,check_duplicate_vote):
             else:
                 st.session_state['logged_in_as'] = role
                 st.session_state['logged_in_user'] = username
-                st.rerun()
+                st.experimental_rerun()
                 return
         else:
             st.error("Incorrect username or password")
@@ -198,7 +198,7 @@ def voting_page():
                                 st.session_state['vote_success'] = True
                                 st.session_state['logged_in_as'] = 'last page'
                            
-                                st.rerun()
+                                st.experimental_rerun()
                             else:
                                 name, department = search_student_details(user)
                                 st.session_state['voter_name'] = name
@@ -207,7 +207,7 @@ def voting_page():
                                 t.sleep(2)
                                 with st.spinner('Loading...'):
                                     st.session_state['logged_in_as'] = 'last page'
-                                    st.rerun()
+                                    st.experimental_rerun()
                         
                     
 
