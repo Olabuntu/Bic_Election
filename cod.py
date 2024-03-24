@@ -8,8 +8,6 @@ from gspread import Cell
 import requests
 
 
-
-
 st.set_page_config(page_title='BIOCHEMISTRY',
                     page_icon='🧬',
                     
