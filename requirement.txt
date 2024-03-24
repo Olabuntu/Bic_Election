@@ -1,5 +1,5 @@
-gspread
+gspread==5.4.0
 google-auth==1.30.0  # google-auth library is required by gspread for authentication
-streamlit
+streamlit==1.10.0
 streamlit-option-menu
 requests
