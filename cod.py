@@ -260,13 +260,13 @@ def login_page():
 
             st.write(f'Result in progress...')
 
-        else:
-            # selected == "LOGIN":
-            st.markdown(f"<h1 style='text-align: center;'> WELCOME METABOLITE</h1>", unsafe_allow_html=True)
+        # else:
+        #     # selected == "LOGIN":
+        #     st.markdown(f"<h1 style='text-align: center;'> WELCOME METABOLITE</h1>", unsafe_allow_html=True)
 
-            st.write('Please enter your credentials below to login')
+        #     st.write('Please enter your credentials below to login')
 
-            handle_login('Student', check_user_login, check_duplicate_vote)
+        #     handle_login('Student', check_user_login, check_duplicate_vote)
            
 
     elif st.session_state['logged_in_as'] == 'Student' and not st.session_state['vote_success']:
